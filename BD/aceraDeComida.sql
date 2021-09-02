@@ -19,7 +19,7 @@ USE `aceraDeComida` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `aceraDeComida`.`vendedor` (
   `id` INT(15) NOT NULL AUTO_INCREMENT,
-  `establecimiento` VARCHAR(60) NULL,
+  `user` VARCHAR(60) NULL,
   `email` VARCHAR(50) NULL,
   `password` VARCHAR(45) NULL,
   `telefono` VARCHAR(10) NULL,

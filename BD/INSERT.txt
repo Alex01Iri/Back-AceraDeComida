@@ -14,7 +14,7 @@ VALUES (1,'Pambazo', 20, 'comida rapida', 'Pan cubierto de salsa relleno de papa
 ,(5,'Hamburguesa', 40, 'comida rapida', 'Carne acompañada de quezo, verdura, cubierta por 2 panes', 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/08/hamburguesa-2028707.jpg?itok=ujl3qgM9');
 SELECT * FROM aceradecomida.producto;
 
-INSERT INTO `aceraDeComida`.`vendedor` (`id`, `establecimiento`, `titular`, `email`, `telefono`, `password`, `localizacion`) 
+INSERT INTO `aceraDeComida`.`vendedor` (`id`, `user`, `titular`, `email`, `telefono`, `password`, `localizacion`) 
 VALUES (1, 'Garnachas la doña', 'Rosa M.G.', 'rosamg@gmail.com', 5598765412, 0000000000, 'Ecatepec')
 ,(2, 'Gorditas De La Esquina', 'Erik L.V.', 'erick@gmail.com', 5532165478, 0000000000, 'Naucalpan')
 ,(3, 'Tacos El Paisa', 'Luis L.V.', 'luis@gmail.com', 5585526531, 0000000000, 'Tecamac')
