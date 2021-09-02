@@ -1,18 +1,13 @@
 package org.generation.demodb.users;
-
-import org.apache.catalina.LifecycleState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.CrossOrigin;
-
 import java.util.List;
-
 @RestController
 @RequestMapping(path="api/aceradecomida/")
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
 public class userController {
-
     private final UserService userService;
-
     @Autowired
     public userController(UserService userService) {
         this.userService = userService;
@@ -29,8 +24,7 @@ public class userController {
     public void deleteUser(@PathVariable("userId") Long userId) {
         userService.deleteUser(userId);
     }//deleteUser
-    @CrossOrigin("*")
-
+    //@CrossOrigin("*")
     @PostMapping
     public void addUser(@RequestBody user usr){
         userService.addUser(usr);
@@ -41,7 +35,4 @@ public class userController {
                             @RequestParam String password) {
         userService.updateUser(userId, oldPassword, password);
     }//updateUser
-
-
-
 }//class userController

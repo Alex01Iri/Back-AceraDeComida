@@ -14,7 +14,6 @@ public class user { // Plan Old Java Object - POJO
     private  String email;
     @Column(name="password", nullable = false)
     private String password;
-
         public user(Long id, String username, String password) {
         this.id = id;
         this.username = username;
@@ -22,35 +21,26 @@ public class user { // Plan Old Java Object - POJO
         this.email = email;
     }//constructor
     public user(){}//default constructor
-
     public Long getId() {
         return id;
     }//getId
-
     public void setId(Long id) {
         this.id = id;
     }//setId
-
     public String getUsername() {
         return username;
     }//getUserName
-
     public void setUsername(String username) {
         this.username = username;
     }//setUserName
-
     public String getEmail() { return email; }//getEmail
-
     public void setEmail(String email) {this.email = email; }//setEmail
-
     public String getPassword() {
         return password;
     }//getPassword
-
     public void setPassword(String password) {
         this.password = password;
     }//setPassword
-
     @Override
     public String toString() {
         return "user{" +
